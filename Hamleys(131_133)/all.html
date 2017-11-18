@@ -1,0 +1,153 @@
+
+
+
+<html>
+<body>
+	<canvas id="mycanvas" width="250" height="250" style="border:2px solid #ff0000;float:left;">
+	</canvas>
+	
+	
+	<script>
+		
+		var canvas=document.getElementById('mycanvas');
+		var context=canvas.getContext('2d');
+		context.beginPath();
+		context.moveTo(50,100);
+		context.lineTo(50,150);
+		context.stroke();
+		var centerx=canvas.width/2;
+		var centery=canvas.height/2;
+		var radius=30;
+		context.beginPath();
+		context.arc(centerx-30,centery,radius,0,2*Math.PI,false);
+		context.fillStyle='green';
+		context.fill();
+		context.translate(100,0);
+		context.fillRect(50,60,50,120);
+		context.fillStyle='blue';
+		context.fill();
+	
+
+	</script>
+	<canvas id="square" width="250" height="250"style="border:2px solid #ff0000;float:left;">
+	</canvas>
+	<script>
+		var canvassquare=document.getElementById('square');
+		var contextsquare=canvassquare.getContext('2d');
+		contextsquare.fillStyle="pink";
+		contextsquare.fillRect(0,0,100,50);
+		contextsquare.translate(100,100);
+		contextsquare.fillStyle="pink";
+		contextsquare.fillRect(0,0,100,50);
+		
+	</script>
+	<canvas id="rectangle" width="250" height="250"style="border:2px solid #ff0000;float:left;">
+	</canvas>
+	<script>
+		var canvasrect=document.getElementById('rectangle');
+		var contextrect=canvasrect.getContext('2d');
+		contextrect.fillStyle='#FFFF00';
+		contextrect.fillRect(0,0,70,50);
+		contextrect.scale(2,2);
+		contextrect.translate(50,50);
+		contextrect.fillStyle='#FFFF00';
+		contextrect.fillRect(0,0,70,50);
+		
+	</script>
+	<canvas id="s" width="250" height="250"style="border:2px solid #ff0000;float:left;">
+	</canvas>
+	<script>
+		var canvasrect=document.getElementById('s');
+		var contextrect=canvasrect.getContext('2d');
+		contextrect.fillStyle='orange';
+		contextrect.fillRect(0,0,70,50);
+		contextrect.rotate(20*Math.PI/180);
+		contextrect.translate(100,100);
+		contextrect.fillStyle='orange';
+		contextrect.fillRect(0,0,70,50);
+		
+	</script>
+		
+
+	
+	
+	<canvas id="all" width="1000" height="1000"style="border:2px solid #ff0000;float:left;">
+	</canvas>
+	<script>
+		var canvas=document.getElementById('all');
+		var context=canvas.getContext('2d');
+		
+		var centerx=canvas.width/2;
+		var centery=canvas.height/2;
+		var radius=40;
+		context.beginPath();
+		context.arc(250-30,250,radius,0,2*Math.PI,false);
+		context.fillStyle='skyblue';
+		context.fill();
+		context.fillStyle='orange';
+		context.fillRect(180,290,80,90);
+		context.fill();
+		context.beginPath();
+		context.moveTo(180,290);
+		context.lineTo(150,230);
+		context.stroke();
+		context.beginPath();
+		context.moveTo(260,290);
+		context.lineTo(290,230);
+		context.stroke();
+		context.beginPath();
+		context.moveTo(180,380);
+		context.lineTo(180,420);
+		context.stroke();
+		context.beginPath();
+		context.moveTo(260,380);
+		context.lineTo(260,420);
+		context.stroke();
+
+
+		context.scale(2,2);
+		context.translate(100,0);
+		context.beginPath();
+		context.arc(250-30,250,radius,0,2*Math.PI,false);
+		context.fillStyle='skyblue';
+		context.fill();
+		context.fillStyle='orange';
+		context.fillRect(180,290,80,90);
+		context.fill();
+		context.beginPath();
+		context.moveTo(180,290);
+		context.lineTo(150,230);
+		context.stroke();
+		context.beginPath();
+		context.moveTo(260,290);
+		context.lineTo(290,230);
+		context.stroke();
+		context.beginPath();
+		context.moveTo(180,380);
+		context.lineTo(180,420);
+		context.stroke();
+		context.rotate(350*Math.PI/180);
+		context.translate(-10,-10);
+		context.beginPath();
+		context.moveTo(260,380);
+		context.lineTo(260,420);
+		context.stroke();
+		
+	</script>
+	<img id="cat" src="lego.jpg" width="177" height="113"/>
+	
+	<canvas id="e" width="250" height="250"style="border:2px solid #ff0000;float:left;">
+	</canvas>
+	<script>
+		var canvas  = document.getElementById("e");
+		
+		window.onload=function() {
+    			
+    			var context = canvas.getContext("2d");
+
+    			context.drawImage(cat, 10, 10);
+			}
+		</script>
+
+</body>
+</html>

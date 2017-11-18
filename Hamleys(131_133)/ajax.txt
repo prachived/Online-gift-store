@@ -1,0 +1,7 @@
+<html>
+<title>AJAX</title>
+<head>AJAX APPLICATION</head>
+<body>
+<img src="C:\MyStuff\notes\project\ajaxx.png" width="800" height="800"/>
+</body>
+</html>
